@@ -163,7 +163,6 @@ body{
   }
 }
 
-
 /* Mobile */
 @media (max-width: 800px) {
  
@@ -208,17 +207,22 @@ body{
 .imagenes-categoria {
   display: flex;
   width: 100%;
-  background-color: rgba(200, 195, 180);
+}
+
+.cuadrado-img {
+  width: 25%;
 }
 
 .cuadrado-img img {
-  width: 312px;
+  width: 100%;
   height: 250px;
-  background-color: rgba(200, 195, 180);
-  border: 1px solid rgba(200, 195, 180);
+  object-fit: cover;
+  display: block;
 }
 
 .categoria {
+  width: 100%;
+  box-sizing: border-box;
   background-color: rgba(227, 223, 211);
   padding: 20px 40px;
 }
@@ -228,13 +232,13 @@ body{
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   margin-bottom: 10px;
-  color: rgba(111, 78, 55)
+  color: rgba(111, 78, 55);
 }
 
 .productos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .producto {
@@ -255,6 +259,80 @@ body{
   font-size: 14px;
   color: rgba(111, 78, 55);
   margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .contenedor {
+    flex-wrap: nowrap;
+  }
+
+  .caja {
+    width: auto;
+    margin: 0 10px;
+  }
+
+  .text-infor {
+    font-size: 16px;
+    padding-right: 30px;
+  }
+
+  .cuadrado-img img {
+    height: 150px;
+  }
+
+  .producto {
+    width: 40%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+
+  .navbar {
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .nav-links a {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  .carrusel img {
+    height: 300px;
+  }
+
+  .infor {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  .text-infor {
+    padding: 0 40px 20px 40px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contenedor {
+    flex-wrap: wrap;
+  }
+
+  .caja {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .cuadrado-img img {
+    height: 100px;
+  }
+
+  .producto {
+    width: 45%;
+  }
 }
 
 /* Sucursales */
@@ -404,11 +482,26 @@ body{
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   padding: 6px 14px;
-  border: 1px solid rgba(34, 34, 34);
   border-radius: 20px;
-  background-color: white;
   cursor: pointer;
   margin: 4px;
+  border: 1px solid #685d51;
+}
+
+.item-btn.cafes {
+  background-color: #F3E7D7;
+}
+
+.item-btn.bebidas {
+  background-color: #EFEDE7;
+}
+
+.item-btn.pasteleria {
+  background-color: #E8DDD1;
+}
+
+.item-btn.almuerzos {
+  background-color: #EDE8E0;
 }
 
 .item-btn:hover {
@@ -429,9 +522,9 @@ body{
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   padding: 10px 30px;
-  border: 1px solid rgba(34, 34, 34);
+  border: 1px solid #564d43;
   border-radius: 20px;
-  background-color: white;
+  background-color: #a19589;
   cursor: pointer;
 }
 
@@ -440,4 +533,129 @@ body{
   color: white;
   border-color: rgba(111, 78, 55);
 }
+
+.registrarse-overlay {
+  display: none;
+}
+
+.registrarse-overlay:target {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.registrarse-contenido {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  position: relative;
+}
+
+.registrarse-titulo {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: rgba(34, 34, 34);
+}
+
+.registrarse-input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(180, 180, 180);
+  border-radius: 20px;
+}
+
+.registrarse-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid rgba(34, 34, 34);
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.registrarse-btn:hover {
+  background-color: rgba(34, 34, 34);
+  color: white;
+  border-color: rgba(34, 34, 34);
+}
+
+.registrarse-btn.secundario {
+  background-color: white;
+  color: rgba(34, 34, 34);
+  border: 1px solid rgba(34, 34, 34);
+}
+
+.registrarse-btn.secundario:hover {
+  background-color: rgba(34, 34, 34);
+  color: white;
+  border-color: rgba(34, 34, 34);
+}
+
+
+.registrarse-cerrar {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 800px) {
+
+  .nav-links a {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .barra-pedido {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .barra-izquierda {
+    flex-wrap: wrap;
+    margin-right: 8px;
+  }
+
+  .selector {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .logo-barra {
+    height: 35px;
+    width: 35px;
+  }
+
+  .btn-registrarse {
+    font-size: 11px;
+  }
+
+  .nombre-categoria {
+    margin-left: 5px;
+  }
+
+  .seccion-menu {
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
 
