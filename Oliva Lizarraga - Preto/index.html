@@ -20,16 +20,25 @@
         <li><a href="./Pages/sobrenosotros.html">SOBRE NOSOTROS</a></li>
         <li><a href="./Pages/menú.html">MENÚ</a></li>
         <li><a href="./Pages/sucursales.html">SUCURSALES</a></li>
-        <li><a href="./Pages/pedido-anticipado.html">PEDIDO ANTICIPADO</a></li>
+        <li><a href="./Pages/pedidoanticipado.html">PEDIDO ANTICIPADO</a></li>
         <li><a href="./Pages/contacto.html">CONTACTO</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
+
     <div class="carrusel">
-        <img src="./Multimedia/imagen1.png" alt="">
+
+    <button id="anterior" onclick="anteriorImagen()">❮</button>
+
+    <img id="imagenCarrusel" src="./Multimedia/imagen1.png" alt="">
+
+    <button id="siguiente" onclick="siguienteImagen()">❯</button>
+
     </div>
+
+    <script src="./funciones.js"></script>
 
     <div class="infor">
         <div class="img-infor">
