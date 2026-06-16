@@ -965,15 +965,15 @@ body{
     font-size: 14px;
     padding: 10px 20px;
     margin-top: 15px;
-    border: 1px solid rgba(111, 78, 55);
+    border: 1px solid rgb(135, 26, 26);
     border-radius: 20px;
     background-color: white;
-    color: rgba(111, 78, 55);
+    color: rgb(180, 53, 53);
     cursor: pointer;
 }
 
 .btn-vaciar:hover{
-    background-color: rgba(111, 78, 55);
+    background-color: rgb(135, 26, 26);
     color: white;
 }
 
