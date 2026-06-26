@@ -1,0 +1,1054 @@
+body{
+    margin: 0;
+}
+
+/* tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&display=swap');
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Inicio */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 40px;
+    background-color: rgba(34, 34, 34)
+}
+
+.logo img {
+    height: 63px;
+    width: 63px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+.carrusel img{
+    height: 400px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.infor{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(227, 223, 211)
+}
+
+.img-infor img{
+    height: 200px;
+    width: 200px;
+    padding: 20px 70px;
+    border-radius: 50%;
+}
+
+.text-infor{
+    display: flex;
+    text-align: center;
+    padding-right: 50px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(34, 34, 34);
+    font-size: 20px;
+}
+
+/* footer */
+.mapa-footer iframe {
+  height: 350px;
+  border-style: none;
+  width: 100%
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(111, 78, 55)
+}
+
+.contenedor{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.caja {
+  display: flex;
+  flex-direction: column; 
+}
+
+.sub-footer{
+    font-family: "Montserrat", sans-serif;
+}
+.caja p{
+    text-align: left;
+    margin: 4px 0;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.caja p img {
+  height: 14px;
+  width: 14px;
+  margin-right: 4px;
+}
+
+.ig{
+  margin-top: 15px;
+}
+
+.ig a{
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.ig img{
+  height: 14px;
+  width: 14px;
+  margin-right: 4px;
+}
+
+
+
+
+
+/* Sobre nosotros */
+.titulo-nosotros {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  padding: 20px;
+  margin: 0;
+  background-color: rgba(200, 195, 180);
+  color: rgba(111, 78, 55);
+}
+
+.seccion-nosotros {
+  background-color: rgba(227, 223, 211);
+  padding: 40px 20px;
+}
+
+.bloque-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.bloque-nosotros.invertido {
+  flex-direction: row-reverse;
+}
+
+.texto-nosotros {
+  width: 50%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.texto-nosotros h2 {
+  font-family: "Poppins", sans-serif;
+  color: rgba(111, 78, 55);
+  margin-bottom: 15px;
+}
+
+.texto-nosotros p {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(34, 34, 34);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.img-nosotros {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-nosotros img {
+  width: 80%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+
+
+/* Menú */
+.imagenes-categoria {
+  display: flex;
+  width: 100%;
+}
+
+.cuadrado-img {
+  width: 25%;
+}
+
+.cuadrado-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.categoria {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(227, 223, 211);
+  padding: 20px 40px;
+}
+
+.categoria h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  color: rgba(111, 78, 55);
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto {
+  width: 30%;
+  margin-bottom: 10px;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.producto .nombre {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.producto .precio {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: rgba(111, 78, 55);
+  margin: 0;
+}
+
+
+
+
+
+/* Sucursales */
+.titulo-sucursales {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  padding: 20px;
+  margin: 0;
+  background-color: rgba(200, 195, 180);
+  color: rgba(111, 78, 55)
+}
+
+.sucursal {
+  display: flex;
+  height: 200px;
+  border-bottom: 1px solid rgba(200, 195, 180);
+}
+
+.sucursal-mapa {
+  width: 50%;
+}
+
+.sucursal-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(227, 223, 211);
+}
+
+.sucursal-mapa iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.sucursal-info img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sucursal-info p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin: 3px 0;
+  color: rgba(34, 34, 34);
+}
+
+.sucursal-info p img {
+  height: 12px;
+  width: 12px;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.sucursal.invertida {
+  flex-direction: row-reverse;
+}
+
+
+
+
+
+/* Pedido anticipado */
+.titulo-pedido {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  padding: 20px;
+  margin: 0;
+  background-color: rgba(200, 195, 180);
+  color: rgba(111, 78, 55);
+}
+
+.barra-pedido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(227, 223, 211);
+  border-top: 3px solid rgb(182, 175, 158);
+  border-bottom: 3px solid rgb(182, 175, 158);
+}
+
+.barra-izquierda {
+  display: flex;
+  align-items: center;
+}
+
+.logo-barra {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.selector {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  padding: 5px 10px;
+  border: 1px solid rgba(200, 195, 180);
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.btn-registrarse {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.seccion-menu {
+  padding: 15px;
+  background-color: rgba(227, 223, 211);
+}
+
+.titulo-menu {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: rgba(111, 78, 55);
+}
+
+.categoria-pedido {
+  margin-bottom: 15px;
+}
+
+.nombre-categoria {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: rgba(111, 78, 55);
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.item-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 4px;
+  border: 1px solid #685d51;
+}
+
+.item-btn.cafes {
+  background-color: #F3E7D7;
+}
+
+.item-btn.bebidas {
+  background-color: #EFEDE7;
+}
+
+.item-btn.pasteleria {
+  background-color: #E8DDD1;
+}
+
+.item-btn.almuerzos {
+  background-color: #EDE8E0;
+}
+
+.item-btn:hover {
+  background-color: rgba(111, 78, 55);
+  color: white;
+  border-color: rgba(111, 78, 55);
+}
+
+.carrito{
+  background-color: rgba(200, 195, 180);
+  border-top: 3px solid rgb(182, 175, 158);
+}
+
+.acciones-pedido{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-ver-pedido,
+.btn-comprar{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    padding: 12px 25px;
+    margin-left: 7px;
+    margin-right: 7px;
+    border: 1px solid rgba(111, 78, 55);
+    border-radius: 25px;
+    background-color: rgba(227, 223, 211);
+    color: rgba(111, 78, 55);
+    cursor: pointer;
+}
+
+.btn-ver-pedido:hover,
+.btn-comprar:hover{
+
+    background-color: rgba(111, 78, 55);
+    color: white;
+}
+
+.registrarse-overlay {
+  display: none;
+}
+
+.registrarse-overlay:target {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.registrarse-contenido {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  position: relative;
+}
+
+.registrarse-titulo {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: rgba(34, 34, 34);
+}
+
+#emailRegistro, #primerContraseñaRegistro, #segundaContraseñaRegistro{
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(180, 180, 180);
+  border-radius: 20px;
+}
+
+.registrarse-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid rgba(34, 34, 34);
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.registrarse-btn:hover {
+  background-color: rgba(34, 34, 34);
+  color: white;
+  border-color: rgba(34, 34, 34);
+}
+
+.registrarse-btn.secundario {
+  background-color: white;
+  color: rgba(34, 34, 34);
+  border: 1px solid rgba(34, 34, 34);
+}
+
+.registrarse-btn.secundario:hover {
+  background-color: rgba(34, 34, 34);
+  color: white;
+  border-color: rgba(34, 34, 34);
+}
+
+.registrarse-cerrar {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#respuestaRegistro{
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(111,78,55);
+}
+
+
+
+
+/* Contacto */
+.titulo-contacto {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  padding: 20px;
+  margin: 0;
+  background-color: rgba(200, 195, 180);
+  color: rgba(111, 78, 55);
+}
+
+.contenedor-contacto {
+  background-color: rgba(227, 223, 211);
+  padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario-caja {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.formulario-caja h2 {
+  font-family: "Poppins", sans-serif;
+  color: rgba(111, 78, 55);
+  margin-top: 0;
+}
+
+.formulario-caja p {
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+#nombre, #email, #motivo, #mensaje {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(180, 180, 180);
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#mensaje {
+  resize: none;
+}
+
+.btn-contacto {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px;
+  border: 1px solid rgba(111, 78, 55);
+  border-radius: 25px;
+  background-color: white;
+  color: rgba(111, 78, 55);
+  cursor: pointer;
+}
+
+.btn-contacto:hover {
+  background-color: rgba(111, 78, 55);
+  color: white;
+}
+
+#respuesta{
+    margin-top: 15px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(111,78,55);
+}
+
+
+
+
+
+/* JavaScript */
+#detallePedido{
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid rgba(111, 78, 55);
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+#detallePedido h2{
+    margin-top: 0;
+    color: rgba(111, 78, 55);
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-vaciar{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: 1px solid rgb(135, 26, 26);
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(180, 53, 53);
+    cursor: pointer;
+}
+
+.btn-vaciar:hover{
+    background-color: rgb(135, 26, 26);
+    color: white;
+}
+
+.contenedor-vaciar{
+    text-align: center;
+    height: 70px;
+}
+
+.carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(227, 223, 211);
+    padding: 20px;
+}
+
+.carrusel img{
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carrusel button{
+    margin: 0 15px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(111, 78, 55);
+    border-radius: 50%;
+    background-color: white;
+    color: rgba(111, 78, 55);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carrusel button:hover{
+    background-color: rgba(111, 78, 55);
+    color: white;
+}
+
+
+
+
+
+/* ------- Tablet ------- */
+
+@media (max-width: 1024px) {
+ 
+  /* ----- Inicio ----- */
+  .navbar {
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .nav-links li {
+    margin-left: 10px; 
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    padding: 10px; 
+  }
+
+  .contenedor {
+    flex-wrap: nowrap;
+  }
+ 
+  .caja {
+    width: auto;
+    margin: 0 10px;
+  }
+ 
+  .text-infor {
+    font-size: 16px;
+    padding-right: 30px;
+  }
+
+
+  /* ----- Sobre nosotros ----- */
+   .texto-nosotros {
+    padding: 0 20px; 
+  }
+  
+  .texto-nosotros h2 {
+    font-size: 22px; 
+  }
+
+  .texto-nosotros p {
+    font-size: 15px; 
+  }
+
+  .img-nosotros img {
+    width: 90%; 
+  }
+
+
+/* ----- Menú ----- */
+  .contenedor {
+    flex-wrap: nowrap;
+  }
+
+  .caja {
+    width: auto;
+    margin: 0 10px;
+  }
+
+  .text-infor {
+    font-size: 16px;
+    padding-right: 30px;
+  }
+
+  .cuadrado-img img {
+    height: 150px;
+  }
+
+  .producto {
+    width: 40%;
+  }
+
+
+/* ----- Contacto ----- */
+  .contenedor-contacto {
+    padding: 40px 20px;
+  }
+
+  .formulario-caja {
+    max-width: 450px; 
+    padding: 30px;
+  }
+}
+
+
+
+
+
+/* Mobile */
+@media (max-width: 800px) {
+
+/* ----- Inicio ----- */
+
+ .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+  }
+
+  .nav-links{
+    flex-wrap: wrap;       
+    justify-content: center;
+    padding: 0;
+    margin: 0; 
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li{
+    margin: 10px 9px;
+  }
+
+  .nav-links a{
+    padding: 10px 5px;
+    font-size: 13px;
+    display: inline-block;
+  }
+
+  .carrusel img {
+    height: 300px;
+  }
+
+  .infor {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  .text-infor {
+    padding: 0 40px 20px 40px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+.caja{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+ 
+
+/* ----- Sobre nosotros ----- */
+  .bloque-nosotros, .bloque-nosotros.invertido {
+    flex-direction: column; 
+    margin-bottom: 50px;   
+  }
+
+  .texto-nosotros, .img-nosotros {
+    width: 100%;       
+    padding: 0 10px;   
+    text-align: center; 
+  }
+
+  .img-nosotros img {
+    width: 100%;       
+    max-height: 280px; 
+    margin-top: 20px;  
+  } 
+
+
+/* ----- Menú ----- */
+  .cuadrado-img img {
+    height: 100px;
+  }
+
+  .producto {
+    width: 45%;
+  }
+
+.producto .nombre{
+    font-size: 15px;
+  }
+
+.producto .precio {
+  font-size: 12px;
+}
+
+
+/* ----- Pedido anticipado ----- */
+  .barra-pedido {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .barra-izquierda {
+    flex-wrap: wrap;
+    margin-right: 8px;
+  }
+
+  .selector {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .logo-barra {
+    height: 35px;
+    width: 35px;
+  }
+
+  .btn-registrarse {
+    font-size: 11px;
+  }
+
+  .nombre-categoria {
+    margin-left: 5px;
+  }
+
+  .seccion-menu {
+    padding: 10px;
+  }
+
+  .items{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+ .registrarse-contenido{
+
+    width: 90%;
+    max-width: 350px;
+
+    padding: 25px 20px;
+
+    box-sizing: border-box;
+  }
+
+  .registrarse-titulo{
+    font-size: 15px;
+  }
+
+  #emailRegistro, #primerContraseñaRegistro, #segundaContraseñaRegistro {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .registrarse-btn{
+    font-size: 14px;
+    padding: 12px;
+  }
+
+
+/* ----- Contacto ----- */
+ .contenedor-contacto {
+    padding: 25px 15px;
+  }
+
+  .formulario-caja {
+    padding: 25px 20px;
+    border-radius: 10px;
+  }
+
+  .formulario-caja h2 {
+    font-size: 20px;
+  }
+
+  #nombre, #email, #motivo, #mensaje {
+    padding: 10px 12px; 
+    font-size: 13px;
+  }
+
+
+/* ----- JavaScript ----- */
+  #detallePedido{
+        width: 85%;
+        margin: 15px auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+  .carrusel{
+    position: relative;
+    padding: 10px;
+  }
+
+  .carrusel img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .carrusel button{
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(111, 78, 55);
+    background-color: white;
+    color: rgba(111, 78, 55);
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  #anterior{
+    left: 15px;
+  }
+
+  #siguiente{
+    right: 15px;
+  }
+}

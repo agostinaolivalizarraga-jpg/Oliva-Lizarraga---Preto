@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preto café</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../Multimedia/logo-pretto.png" alt="">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="../Pages/sobrenosotros.html">SOBRE NOSOTROS</a></li>
+        <li><a href="../Pages/menú.html">MENÚ</a></li>
+        <li><a href="../Pages/sucursales.html">SUCURSALES</a></li>
+        <li><a href="../Pages/pedidoanticipado.html">PEDIDO ANTICIPADO</a></li>
+        <li><a href="../Pages/contacto.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <h1 class="titulo-pedido">PEDIDO ANTICIPADO</h1>
+
+  <div class="barra-pedido">
+    <div class="barra-izquierda">
+      <img src="../Multimedia/logo-pretto.png" alt="logo" class="logo-barra">
+
+      <select class="selector">
+        <option>Sucursal</option>
+        <option>Martínez</option>
+        <option>San Isidro</option>
+        <option>Barrio Chino</option>
+        <option>Rivadavia</option>
+        <option>Maure</option>
+      </select>
+      <select class="selector">
+        <option>Horario de retiro</option>
+        <option>8:00 am</option>
+        <option>9:00 am</option>
+        <option>10:00 am</option>
+        <option>11:00 am</option>
+        <option>12:00 pm</option>
+        <option>13:00 pm</option>
+        <option>14:00 pm</option>
+        <option>15:00 pm</option>
+        <option>16:00 pm</option>
+        <option>17:00 pm</option>
+        <option>18:00 pm</option>
+        <option>19:00 pm</option>
+      </select>
+    </div>
+     <a href="#caja-registrarse" class="btn-registrarse">REGISTRARSE</a>
+  </div>
+
+  <div class="seccion-menu">
+    <h2 class="titulo-menu">MENÚ</h2>
+
+    <div class="categoria-pedido">
+      <p class="nombre-categoria">CAFÉS</p>
+      <div class="items">
+        <button class="item-btn cafes" onclick="agregarProducto ('Espresso','$5000')">Espresso <br> $5000</button>
+        <button class="item-btn cafes" onclick="agregarProducto ('Macchiato','$5000')">Macchiato <br> $5000</button>
+        <button class="item-btn cafes" onclick="agregarProducto ('Latte','$5000')">Latte <br> $5000</button>
+        <button class="item-btn cafes" onclick="agregarProducto ('Capuccino','$5000')">Cappuccino <br> $5000</button>
+        <button class="item-btn cafes" onclick="agregarProducto ('Americano','$5000')">Americano <br> $5000</button>
+        <button class="item-btn cafes" onclick="agregarProducto ('Mocca','$5000')">Mocca <br> $5000</button>
+        <button class="item-btn cafes" onclick="agregarProducto ('Café con leche','$5000')">Café con leche <br> $5000</button>
+        <button class="item-btn cafes" onclick="agregarProducto ('Flat white','$5000')">Flat white <br> $5000</button>
+      </div>
+    </div>
+
+    <div class="categoria-pedido">
+      <p class="nombre-categoria">BEBIDAS FRÍAS</p>
+      <div class="items">
+        <button class="item-btn bebidas" onclick="agregarProducto ('Iced coffe', '$6000')">Iced coffee <br> $6000</button>
+        <button class="item-btn bebidas" onclick="agregarProducto ('Agua', '$3500')">Agua <br> $3500</button>
+        <button class="item-btn bebidas" onclick="agregarProducto ('Agua saborizada', '$4000')">Agua saborizada <br> $4000</button>
+        <button class="item-btn bebidas" onclick="agregarProducto ('Gaseosa', '$4000')">Gaseosa <br> $4000</button>
+        <button class="item-btn bebidas" onclick="agregarProducto ('Jugo de naranja', '$5000')">Jugo de naranja <br> $5000</button>
+        <button class="item-btn bebidas" onclick="agregarProducto ('Limonada', '$5000')">Limonada <br> $5000</button>
+        <button class="item-btn bebidas" onclick="agregarProducto ('Licuado banana y leche', '$6000')">Licuado banana y leche <br> $6000</button>
+        <button class="item-btn bebidas" onclick="agregarProducto ('Licuado durazno y naranja', '$6000')">Licuado durazno y naranja <br> $6000</button>
+      </div>
+    </div>
+
+    <div class="categoria-pedido">
+      <p class="nombre-categoria">PASTELERÍA</p>
+      <div class="items">
+        <button class="item-btn pasteleria" onclick="agregarProducto ('Croissant', '$5000')">Croissant <br> $5000</button>
+        <button class="item-btn pasteleria" onclick="agregarProducto ('Scon de queso', '$6000')">Scon de queso <br> $6000</button>
+        <button class="item-btn pasteleria" onclick="agregarProducto ('Alfajores', '$5000')">Alfajores <br> $5000</button>
+        <button class="item-btn pasteleria" onclick="agregarProducto ('Budines', '$6000')">Budines <br> $6000</button>
+        <button class="item-btn pasteleria" onclick="agregarProducto ('Cookies', '$5000')">Cookies <br> $5000</button>
+        <button class="item-btn pasteleria" onclick="agregarProducto ('Brownie', '$6000')">Brownie <br> $6000</button>
+        <button class="item-btn pasteleria" onclick="agregarProducto ('Coissant de jamón y queso', '$8000')">Croissant de jamón y queso <br> $8000</button>
+        <button class="item-btn pasteleria" onclick="agregarProducto ('Cuadrado de manzana/limón', '$7000')">Cuadrado de manzana/limón <br> $7000</button>
+      </div>
+    </div>
+
+    <div class="categoria-pedido">
+      <p class="nombre-categoria">ALMUERZOS</p>
+      <div class="items">
+        <button class="item-btn almuerzos" onclick="agregarProducto ('Tostado de jamón y queso', '$8000')">Tostado de jamón y queso <br> $8000</button>
+        <button class="item-btn almuerzos" onclick="agregarProducto ('Chicken salad', '$16000')">Chicken salad <br> $16000</button>
+        <button class="item-btn almuerzos" onclick="agregarProducto ('Ensalada veggie', '$12000')">Ensalada veggie <br> $12000</button>
+        <button class="item-btn almuerzos" onclick="agregarProducto ('Quesadillas', '$9000')">Quesadillas <br> $9000</button>
+        <button class="item-btn almuerzos" onclick="agregarProducto ('Musaka griega', '$16000')">Musaka griega <br> $16000</button>
+        <button class="item-btn almuerzos" onclick="agregarProducto ('Pollo al tomillo', '$16000')">Pollo al tomillo <br> $16000</button>
+        <button class="item-btn almuerzos" onclick="agregarProducto ('Curry de pollo', '$17000')">Curry de pollo <br> $17000</button>
+        <button class="item-btn almuerzos" onclick="agregarProducto ('Ternera braseada con puré', '$20000')">Ternera braseada con puré <br> $20000</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="carrito">
+    <div class="acciones-pedido">
+        <button class="btn-ver-pedido" onclick="mostrarPedido()">
+            Ver pedido
+        </button>
+
+        <button class="btn-comprar" onclick="finalizarCompra()">
+            Finalizar compra
+        </button>
+    </div>
+
+    <div id="detallePedido"></div>
+
+    <div class="contenedor-vaciar">
+        <button class="btn-vaciar" onclick="vaciarPedido()">
+            Vaciar pedido
+        </button>
+    </div>
+</div>
+
+<script src="../funciones.js"></script>
+
+</main>
+
+<div class="registrarse-overlay" id="caja-registrarse">
+  <div class="registrarse-contenido">
+    <a href="#" class="registrarse-cerrar">✕</a>
+    <h2 class="registrarse-titulo">REGISTRARSE</h2>
+    <input type="text" placeholder="email/teléfono" id="emailRegistro">
+    <input type="password" placeholder="contraseña" id="primerContraseñaRegistro">
+    <input type="password" placeholder="confirmar contraseña" id="segundaContraseñaRegistro">
+    <button class="registrarse-btn" onclick="registrarse()">registrarse</button>
+    <button class="registrarse-btn secundario">iniciar sesión</button>
+    <p id="respuestaRegistro"></p>
+  </div>
+</div>
+
+<footer class="footer">
+<div class="mapa-footer">
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qHg61O5QNtXGG52iDf1zIc9vHTqVn7c&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+</div>
+<div class="contenedor">
+    <div class="caja">
+    <p class="sub-footer"><strong>MARTÍNEZ</strong></p>
+    <p><img src="../Multimedia/ubicacion.png" alt=""> Eduardo Costa 2050</p>
+    <p><img src="../Multimedia/reloj.png" alt=""> Lun - Dom: 8 am a 8 pm</p>
+    <p><img src="../Multimedia/telefono.png" alt=""> 11 6537-0334</p>
+  </div>
+
+  <div class="caja">
+    <p class="sub-footer"><strong>SAN ISIDRO</strong></p>
+    <p><img src="../Multimedia/ubicacion.png" alt=""> Cosme Béccar 216</p>
+    <p><img src="../Multimedia/reloj.png" alt=""> Lun - Sáb: 8 am a 8 pm</p>
+    <p><img src="../Multimedia/telefono.png" alt=""> 11 6537-0334</p>
+  </div>
+
+  <div class="caja">
+    <p class="sub-footer"><strong>BARRIO CHINO</strong></p>
+    <p><img src="../Multimedia/ubicacion.png" alt=""> Echeverría 1678</p>
+    <p><img src="../Multimedia/reloj.png" alt=""> Lun - Dom: 7 am a 8 pm</p>
+    <p><img src="../Multimedia/telefono.png" alt=""> 11 6537-0334</p>
+  </div>
+
+  <div class="caja">
+    <p class="sub-footer"><strong>RIVADAVIA</strong></p>
+    <p><img src="../Multimedia/ubicacion.png" alt=""> Rivadavia 4633</p>
+    <p><img src="../Multimedia/reloj.png" alt=""> Lun - Dom: 7 am a 8 pm</p>
+    <p><img src="../Multimedia/telefono.png" alt=""> 11 6537-0334</p>
+  </div>
+
+  <div class="caja">
+    <p class="sub-footer"><strong>MAURE</strong></p>
+    <p><img src="../Multimedia/ubicacion.png" alt=""> Soldado de la independencia 892</p>
+    <p><img src="../Multimedia/reloj.png" alt=""> Lun - Dom: 7 am a 8 pm</p>
+    <p><img src="../Multimedia/telefono.png" alt=""> 11 6537-0334</p>
+  </div>
+</div>
+
+  <div class="ig">
+    <a href="https://www.instagram.com/preto.coffee?igsh=MW9qMXh0eXR2aml4ZQ=="><img src="../Multimedia/logotipo-de-instagram.png" alt=""> @preto.coffee</a>
+  </div>
+
+</footer>
+
+</body>
+</html>

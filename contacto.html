@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preto café</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../Multimedia/logo-pretto.png" alt="">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="../Pages/sobrenosotros.html">SOBRE NOSOTROS</a></li>
+        <li><a href="../Pages/menú.html">MENÚ</a></li>
+        <li><a href="../Pages/sucursales.html">SUCURSALES</a></li>
+        <li><a href="../Pages/pedidoanticipado.html">PEDIDO ANTICIPADO</a></li>
+        <li><a href="../Pages/contacto.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1 class="titulo-contacto">CONTACTO</h1>
+
+  <div class="contenedor-contacto">
+    <div class="formulario-caja">
+      <h2>Escribinos</h2>
+      <p>¿Tenés alguna duda, sugerencia o te gustaría sumarte a nuestro equipo de baristas?</p>
+      
+      <form class="formulario-contacto">
+        <input type="text" placeholder="Nombre completo" id="nombre">
+        <input type="email" placeholder="Correo electrónico" id="email">
+        
+        <select id="motivo">
+          <option>Motivo del mensaje</option>
+          <option>Sugerencias o consultas</option>
+          <option>Trabajá con nosotros (Enviar CV)</option>
+          <option>Franquicias</option>
+        </select>
+        
+        <textarea placeholder="Dejanos tu mensaje aquí..." id="mensaje"></textarea>
+        
+        <button type="button" onclick="enviarFormulario()" class="btn-contacto">
+          Enviar
+        </button>
+
+        <p id="respuesta"></p>
+  
+      </form>
+    </div>
+  </div>
+
+  <script src="../funciones.js"></script>
+  
+</main>
+
+<footer class="footer">
+  <div class="mapa-footer">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qHg61O5QNtXGG52iDf1zIc9vHTqVn7c&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+  </div>
+  <div class="contenedor">
+    <div class="caja">
+      <p class="sub-footer"><strong>MARTÍNEZ</strong></p>
+      <p><img src="../Multimedia/ubicacion.png" alt=""> Eduardo Costa 2050</p>
+      <p><img src="../Multimedia/reloj.png" alt=""> Lun - Dom: 8 am a 8 pm</p>
+      <p><img src="../Multimedia/telefono.png" alt=""> 11 6537-0334</p>
+    </div>
+    <div class="caja">
+      <p class="sub-footer"><strong>SAN ISIDRO</strong></p>
+      <p><img src="../Multimedia/ubicacion.png" alt=""> Cosme Béccar 216</p>
+      <p><img src="../Multimedia/reloj.png" alt=""> Lun - Sáb: 8 am a 8 pm</p>
+      <p><img src="../Multimedia/telefono.png" alt=""> 11 6537-0334</p>
+    </div>
+    <div class="caja">
+      <p class="sub-footer"><strong>BARRIO CHINO</strong></p>
+      <p><img src="../Multimedia/ubicacion.png" alt=""> Echeverría 1678</p>
+      <p><img src="../Multimedia/reloj.png" alt=""> Lun - Dom: 7 am a 8 pm</p>
+      <p><img src="../Multimedia/telefono.png" alt=""> 11 6537-0334</p>
+    </div>
+    <div class="caja">
+      <p class="sub-footer"><strong>RIVADAVIA</strong></p>
+      <p><img src="../Multimedia/ubicacion.png" alt=""> Rivadavia 4633</p>
+      <p><img src="../Multimedia/reloj.png" alt=""> Lun - Dom: 7 am a 8 pm</p>
+      <p><img src="../Multimedia/telefono.png" alt=""> 11 6537-0334</p>
+    </div>
+    <div class="caja">
+      <p class="sub-footer"><strong>MAURE</strong></p>
+      <p><img src="../Multimedia/ubicacion.png" alt=""> Soldado de la independencia 892</p>
+      <p><img src="../Multimedia/reloj.png" alt=""> Lun - Dom: 7 am a 8 pm</p>
+      <p><img src="../Multimedia/telefono.png" alt=""> 11 6537-0334</p>
+    </div>
+  </div>
+  <div class="ig">
+    <a href="https://www.instagram.com/preto.coffee?igsh=MW9qMXh0eXR2aml4ZQ=="><img src="../Multimedia/logotipo-de-instagram.png" alt=""> @preto.coffee</a>
+  </div>
+</footer>
+
+</body>
+</html>
