@@ -37,6 +37,23 @@ function mostrarPedido(){
     }
 }
 
+function finalizarCompra(){
+
+    let caja = document.getElementById("detallePedido");
+
+    if(pedido.length == 0){
+
+        caja.innerHTML = "No agregaste productos";
+
+    }else{
+
+        caja.innerHTML =
+        "<h2>¡Gracias por tu compra!</h2><p>Tu pedido estará listo para retirar.</p>";
+
+        pedido = [];
+    }
+}
+
 function vaciarPedido(){
 
     pedido = [];
@@ -76,4 +93,54 @@ function anteriorImagen(){
     }
 
     document.getElementById("imagenCarrusel").src = imagenes[posicion];
+}
+
+
+
+
+
+/*contacto*/
+function enviarFormulario(){
+
+    let nombre = document.getElementById("nombre").value;
+    let email = document.getElementById("email").value;
+    let mensaje = document.getElementById("mensaje").value;
+    let motivo = document.getElementById("motivo").value;
+
+    let respuesta = document.getElementById("respuesta");
+
+    if(nombre == "" || email == "" || mensaje == "" || motivo == "Motivo del mensaje"){
+
+        respuesta.innerHTML =
+        "Por favor complete todos los campos";
+
+    }else{
+
+        respuesta.innerHTML =
+        "Mensaje enviado correctamente";
+    }
+}
+
+
+
+
+/* Registrarse */
+function registrarse(){
+
+    let nombre = document.getElementById("emailRegistro").value;
+    let email = document.getElementById("primerContraseñaRegistro").value;
+    let password = document.getElementById("segundaContraseñaRegistro").value;
+
+    let respuesta = document.getElementById("respuestaRegistro");
+
+    if(nombre == "" || email == "" || password == ""){
+
+        respuesta.innerHTML =
+        "Complete todos los campos";
+
+    }else{
+
+        respuesta.innerHTML =
+        "¡Registro realizado con éxito!";
+    }
 }

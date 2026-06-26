@@ -127,7 +127,7 @@
             Ver pedido
         </button>
 
-        <button class="btn-comprar">
+        <button class="btn-comprar" onclick="finalizarCompra()">
             Finalizar compra
         </button>
     </div>
@@ -149,11 +149,12 @@
   <div class="registrarse-contenido">
     <a href="#" class="registrarse-cerrar">✕</a>
     <h2 class="registrarse-titulo">REGISTRARSE</h2>
-    <input type="text" placeholder="email/teléfono" class="registrarse-input">
-    <input type="password" placeholder="contraseña" class="registrarse-input">
-    <input type="password" placeholder="confirmar contraseña" class="registrarse-input">
-    <button class="registrarse-btn">enviar</button>
+    <input type="text" placeholder="email/teléfono" id="emailRegistro">
+    <input type="password" placeholder="contraseña" id="primerContraseñaRegistro">
+    <input type="password" placeholder="confirmar contraseña" id="segundaContraseñaRegistro">
+    <button class="registrarse-btn" onclick="registrarse()">registrarse</button>
     <button class="registrarse-btn secundario">iniciar sesión</button>
+    <p id="respuestaRegistro"></p>
   </div>
 </div>
 

@@ -34,22 +34,30 @@
       <p>¿Tenés alguna duda, sugerencia o te gustaría sumarte a nuestro equipo de baristas?</p>
       
       <form class="formulario-contacto">
-        <input type="text" placeholder="Nombre completo" class="input-contacto">
-        <input type="email" placeholder="Correo electrónico" class="input-contacto">
+        <input type="text" placeholder="Nombre completo" id="nombre">
+        <input type="email" placeholder="Correo electrónico" id="email">
         
-        <select class="select-contacto">
+        <select id="motivo">
           <option>Motivo del mensaje</option>
           <option>Sugerencias o consultas</option>
           <option>Trabajá con nosotros (Enviar CV)</option>
           <option>Franquicias</option>
         </select>
         
-        <textarea placeholder="Dejanos tu mensaje aquí..." class="textarea-contacto"></textarea>
+        <textarea placeholder="Dejanos tu mensaje aquí..." id="mensaje"></textarea>
         
-        <button type="submit" class="btn-contacto">ENVIAR</button>
+        <button type="button" onclick="enviarFormulario()" class="btn-contacto">
+          Enviar
+        </button>
+
+        <p id="respuesta"></p>
+  
       </form>
     </div>
   </div>
+
+  <script src="../funciones.js"></script>
+  
 </main>
 
 <footer class="footer">
